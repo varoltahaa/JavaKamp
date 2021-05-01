@@ -1,15 +1,16 @@
 
 public class StudentManager extends UserManager {
-	public void add(Student student) {
-		System.out.println("Öðrenci Eklendi : " + student.getFirstName());
+	@Override
+	public void add(User user) {
+		System.out.println("Öðrenci Eklendi : " + user.getFirstName());
 	}
-	
-	public void delete(Student student) {
-		System.out.println("Öðrenci Silindi : " + student.getFirstName());
+	@Override
+	public void delete(User user) {
+		System.out.println("Öðrenci Silindi : " + user.getFirstName());
 	}
-	
-	public void update(Student student) {
-		System.out.println("Öðrenci Güncellendi : " + student.getFirstName());
+	@Override
+	public void update(User user) {
+		System.out.println("Öðrenci Güncellendi : " + user.getFirstName());
 	}
 	
 }
